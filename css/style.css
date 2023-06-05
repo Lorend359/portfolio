@@ -1,1 +1,57 @@
-����� �뢮�� ������ �� ��࠭ (ECHO) ����祭.
+/* Добавленные стили для шрифта Montserrat */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+/* Добавленные стили для шрифта Open Sans */
+.subtitle,
+.text,
+.interface,
+button,
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+/* Добавленные стили для заголовков H1, H2, H3 */
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 150%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Добавленные стили для кнопок и ссылок */
+.button,
+a.nav-link {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+����� �뢮�� ������ �� ��࠭ (ECHO) ����祭.
