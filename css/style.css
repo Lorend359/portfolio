@@ -168,12 +168,22 @@ footer {
 }
 
 button {
-    padding: 0;
-    border: none;
+    padding: 6px 10px 10px 10px;
+    border: 1px solid #205B75; /* Окантовка кнопки */
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 8px;
+    text-transform: lowercase; /* Применяем нижний регистр для текста кнопки */
 }
+
+button:hover {
+    background-color: #205B75; /* Изменение фона при наведении */
+    color: #FFFFFF; /* Изменение цвета текста при наведении */
+    border-color: #FFFFFF; /* Изменение цвета окантовки при наведении */
+}
+
+
 
 .skill-list {
     margin: 0;
@@ -235,36 +245,49 @@ button {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
-.social li {
+  }
+  
+  .social li {
     display: inline-block;
     margin: 0;
     padding: 0;
-}
-
-.social-link {
+  }
+  
+  .social-link {
     display: block;
     width: 50px;
     height: 50px;
-    border: 2px solid var(--blue);
+    border: 1px solid #205B75;
     border-radius: 50%;
-}
+  }
+  
+  .social-link:hover {
+    background-color: #E5BB33;
+  }
+  
+  .social-link span.visually-hidden {
+    display: none;
+  }
 
-.social-link:hover {
-    background-color: var(--blue);
-}
+  .social-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  
 
 .social-link_github {
     background-image: url('../img/github.svg');
 }
 
 .social-link_telegram {
-    background-image: url('../img/telegram.svg');
+    background-image: url('../img/1telegram.svg');
 }
 
 .social-link_vk {
-    background-image: url('../img/VK.svg');
+    background-image: url('../img/vk.svg');
 }
 
 .visually-hidden {
@@ -280,9 +303,59 @@ button {
     overflow: hidden;
 }
 
+ul.contacts {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul.contacts li {
+    margin-bottom: 10px; /* Добавляем отступ снизу для разделения контактов */
+  }
+  
+  ul.contacts li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 42px; /* Отступ слева для иконки */
+  }
+  
+  ul.contacts li a .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: left center; /* Положение иконки слева */
+  }
+  
+  .contact-link_phone .icon {
+    background-image: url("../img/phone_icon.svg"); /* Замените на путь к изображению иконки телефона */
+  }
+  
+  .contact-link_mail .icon {
+    background-image: url("../img/email_icon.svg"); /* Замените на путь к изображению иконки почты */
+  }
 
+  ul.contacts li a {
+    color: black;
+  }
+
+  ul.contacts li a:hover {
+    color: #205B75;
+  }
+  
+
+  
+  
     /* Добавленные стили */
     .user_photo {
         border-radius: 55%;
     }
+
+.main-header {
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+    align-items: center;
+}
+
 
